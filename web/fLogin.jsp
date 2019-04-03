@@ -30,7 +30,7 @@
 </div>
 
 <script>
-    $(function  () {
+    $(function() {
         layui.use('form', function(){
             var form = layui.form;
             form.verify({
@@ -53,7 +53,7 @@
                         var obj = eval("("+msg+")");
                         if(obj.code=="1001"){
                             layer.msg(obj.message,function(){
-                                location.href='index.jsp'
+                                location.href='my.jsp'
                             })
                         }else{
                             layer.msg(obj.message);

@@ -11,24 +11,20 @@
     <!-- User Image -->
     <div class="profile-thumb">
         <img src="<%= request.getContextPath()%>/static/img/user-thumb.jpg" alt="" class="rounded-circle">
-        <div class="layui-upload">
-            <div class="layui-upload-list">
-                <img class="layui-upload-img layui-anim layui-circle layui-anim-rotate"  alt="点击更换头像" title="点击更换头像" id="demo1" width='100px' height="100px" src="/file/${user.email }" style="border: 1px solid gray; ">
-                <p id="demoText"></p>
-            </div>
-            <!--   <button type="button" class="layui-btn" id="test1" >上传图片</button> -->
-        </div>
     </div>
     <!-- User Name -->
-    <h5 class="text-center">李四</h5>
-    <a href="<%= request.getContextPath()%>/updatemy.jsp" class="btn btn-main-sm">编辑个人资料</a>
+    <h5 class="text-center"></h5>
+    <a href="<%= request.getContextPath()%>/addmy.jsp" class="btn btn-main-sm">编辑个人资料</a>
 </div>
 <div class="widget user-dashboard-menu">
     <ul>
-        <li class="active" ><a href=""><i class="fa fa-user"></i>我的订单</a></li>
-        <li><a href=""><i class="fa fa-bookmark-o"></i>我的违章</a></li>
-        <li><a href=""><i class="fa fa-file-archive-o"></i>我的历史订单</a></li>
-        <li><a href=""><i class="fa fa-bolt"></i>我的积分<span>23</span></a></li>
+        <li <%--class="active"--%>><a href="<%= request.getContextPath()%>/my.jsp">个人信息</a></li>
+        <li><a href="<%= request.getContextPath()%>/updatemy.jsp">修改个人信息</a></li>
+        <li><a href="<%= request.getContextPath()%>/updatepassword.jsp">修改密码</a></li>
+        <li><a href="<%= request.getContextPath()%>/OrderListServlet?action=findOrder">我的订单</a></li>
+        <li><a href="<%= request.getContextPath()%>/MyIllegal.jsp">事故处理</a></li>
+        <li><a href="<%= request.getContextPath()%>/OrderListServlet?action=findAll">我的历史订单</a></li>
+       <%--.. <li><a href="">我的积分<span></span></a></li>--%>
     </ul>
 </div>
 <script>

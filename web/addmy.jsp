@@ -26,62 +26,55 @@
 
                     <h3 class="widget-header user">编辑个人信息</h3>
                     <div class="x-body">
-                        <form action="<%=request.getContextPath()%>/ClientServlet?action=update" method="post">
+                        <form action="<%=request.getContextPath()%>/ClientServlet?action=add" method="post">
                             <div class="form-group">
-                                <%--<label for="clientId">编号</label>--%>
-                                <input type="hidden" class="form-control" id="clientId" name="clientId"
-                                       value="${client.clientId}"
-                                       readonly>
+                               <%-- <label for="id">编号</label>--%>
+                                <input type="hidden" class="form-control" id="id" name="id" readonly>
                             </div>
-
                             <div class="form-group">
                                 <label for="name">姓名</label>
-                                <input type="text" class="form-control" id="name" name="name" value="${client.name}">
-                            </div>
-                            <div class="form-group">
-                                <label for="age">年龄</label>
-                                <input type="text" class="form-control" id="age" name="age" value="${client.age}">
+                                <input type="text" class="form-control" id="name" name="name">
                             </div>
                             <div class="form-group">
                                 <label for="sex">性别</label>
-                                <input type="text" class="form-control" id="sex" name="sex" value="${client.sex}">
+                                <input type="radio"  name="sex" <%--class="form-control"--%> value="男" id="sex">男
+                                <input type="radio" name="sex"  value="女" id="">女
                             </div>
+
+                            <div class="form-group">
+                                <label for="age">年龄</label>
+                                <input type="text" class="form-control" id="age" name="age">
+                            </div>
+
                             <div class="form-group">
                                 <label for="idNumber">身份证</label>
-                                <input type="text" class="form-control" id="idNumber" name="idNumber"
-                                       value="${client.idNumber}"
-                                >
+                                <input type="text" class="form-control" id="idNumber" name="idNumber">
                             </div>
                             <div class="form-group">
                                 <label for="email">Email</label>
-                                <input type="email" class="form-control" id="email" name="email" value="${client.email}">
+                                <input type="email" class="form-control" id="email" name="email">
                             </div>
                             <div class="form-group">
                                 <label for="tel">联系方式</label>
-                                <input type="text" class="form-control" id="tel" name="tel" value="${client.tel}">
+                                <input type="text" class="form-control" id="tel" name="tel">
                             </div>
                             <div class="form-group">
                                 <label for="driveNumber">驾驶证编号</label>
-                                <input type="text" class="form-control" id="driveNumber" name="driveNumber"
-                                       value="${client.driveNumber}">
+                                <input type="text" class="form-control" id="driveNumber" name="driveNumber">
                             </div>
                             <div class="form-group">
                                 <label for="driveType">驾驶证类型</label>
-                                <input type="text" class="form-control" id="driveType" name="driveType"
-                                       value="${client.driveType}"
-                                >
+                                <input type="text" class="form-control" id="driveType" name="driveType">
                             </div>
                             <div class="form-group">
                                 <label for="address">家庭住址</label>
-                                <input type="text" class="form-control" id="address" name="address"
-                                       value="${client.address}">
-
+                                <input type="text" class="form-control" id="address" name="address">
                             </div>
                             <%--<div class="form-group">
                                 <label for="integral">我的积分</label>
                                 <input type="text" class="form-control" id="integral">
                             </div>--%>
-                            <input type="submit" value="确认修改">
+                            <input type="submit" value="添加信息">
                             <!-- Submit button -->
                             <%--<button class="layui-btn" lay-filter="add"
                                     lay-submit="add">保存修改

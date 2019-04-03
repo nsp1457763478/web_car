@@ -10,25 +10,7 @@
 
                 </div>
                 <!-- Advance Search -->
-                <div class="advance-search">
-                    <form action="#">
-                        <div class="row">
-                            <!-- Store Search -->
-                            <div class="col-lg-6 col-md-12">
-                                <div class="block d-flex">
-                                    <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="search" placeholder="Search for store">
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-12">
-                                <div class="block d-flex">
-                                    <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="search" placeholder="Search for store">
-                                    <!-- Search Button -->
-                                    <button class="btn btn-main">SEARCH</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+
             </div>
         </div>
     </div>
@@ -152,8 +134,7 @@
             <div class="col-12">
                 <!-- Section title -->
                 <div class="section-title">
-                    <h2>All Categories</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, provident!</p>
+                    <h2>热租车辆</h2>
                 </div>
                 <div class="row">
                     <div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">

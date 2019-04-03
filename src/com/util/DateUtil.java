@@ -33,4 +33,10 @@ public class DateUtil {
         SimpleDateFormat sdf=new SimpleDateFormat("yyyyMMddhhmmss");
         return sdf.format(date);
     }
+
+    public static void main(String[] args) {
+        Date date = new Date();
+        String format = new SimpleDateFormat("yyyy-MM-dd").format(date);
+        System.out.println(format);
+    }
 }

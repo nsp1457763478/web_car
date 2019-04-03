@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <title>Title</title>
@@ -30,6 +31,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="<%=request.getContextPath()%>/my.jsp">我的信息</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="<%=request.getContextPath()%>/carAll.jsp">车辆查看</a>
+                            </li>
                         </ul>
                         <ul class="navbar-nav ml-auto mt-10">
                             <li class="nav-item">
@@ -39,8 +43,7 @@
                                 <a class="nav-link login-button" href="<%=request.getContextPath()%>/fzhuce.jsp">注册</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link add-button" href="#">
-                                    购物车</a>
+                                <a class="nav-link login-button" href="<%=request.getContextPath()%>/orderList.jsp">下单</a>
                             </li>
                         </ul>
                     </div>

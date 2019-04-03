@@ -35,7 +35,7 @@
             var form = layui.form;
             form.verify({
                 username: function(value, item){ //value：表单的值、item：表单的DOM对象
-                    if(!new RegExp("^{3,15}$").test(value)){
+                    if(!new RegExp("^[a-zA-Z][a-zA-Z0-9_]{4,15}$").test(value)){
                         return '允许4-16字节';
                     }
                 }
